@@ -8,7 +8,9 @@
 }body{
     background-color:rgb(80, 143, 88);
     background-image: url(../assets/LOGO\ NUEVO\ FONDO.jpeg);
-    background-position:inherit
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 :root{
     --darkgreen: #064e3b;
@@ -186,4 +188,7 @@ li {
 .cuerpo-tecnico:hover{
     transform: scale(1.1);
     box-sizing: var(--darkgreen);
+}
+.navbar{
+    margin: 0;
 }
