@@ -6,40 +6,50 @@
     <title>The Birds - Inicio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
-    
-</head>
+    </head>
 <body>
     <header>
         <h1>The Birds FC</h1>
-        <a href="./index.html">
-            <img src="./assets/ideogram-v3.0_Logo_de_un_Aguila_Verde_minimalista_con_las_letras_FC-0.jpg"alt="Logo de The Birds FC"> 
-            </a>
 
-    <nav>
-            <ul>
-                <li>
-                    <a href="./pages/institucional.html" class="nav-links">Institucional</a> 
-                </li>
-                <li>
-                    <a href="./pages/plantel.html" class="nav-links">Plantel</a> </li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
 
-                <li> 
-                    <a href="./pages/galeria.html" class="nav-links">Galeria</a> 
-                </li>
-                <li>
-                    <a href="./pages/contacto.html" class="nav-links">Contacto</a>
-                </li>
+        <a class="navbar-brand" href="./index.html"><img src="./assets/ideogram-v3.0_Logo_de_un_Aguila_Verde_minimalista_con_las_letras_FC-0.jpg" alt="Logo de the birds FC" class="logo-nav"></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+                <a class="nav-link" href="./pages/institucional.html">Institucional</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="./pages/plantel.html">Plantel</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="./pages/galeria.html">Galería</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </li>
 
             </ul>
+        </div>
+        </div>
+    </nav>
+</header>
 
-        </nav>
-
-    </header>
 
     <main class="flex">      
             <section class="caja">
-                Nuestra Historia</section>
-
+                <h2>Nuestra Historia</h2>
+                </section>
                 <article class="caja">
 
             <p> The Birds FC nació en el año 2009 en Bahía Blanca, impulsado por la pasión por el fútbol, la amistad y el deseo de competir siempre con identidad propia. Desde nuestros inicios, construimos un equipo basado en el compromiso, el esfuerzo colectivo y el respeto por la camiseta. Cada partido es una oportunidad para dejarlo todo en la cancha, defendiendo nuestros colores con orgullo y jugando siempre como equipo. Somos más que un club: somos una banda que cree, lucha y vuela junta.</p></article>
@@ -62,8 +72,8 @@
             </li>
             <li>
                 <a href="https://www.whatsapp.com/?lang=es" target="_blank">
-                </li>
                 <img src="./assets/whatsapp.png" alt="Logo de whatsapp" class="redes"></a>
+            </li>
             <li>
                 <a href="https://x.com/" target="_blank">
                 <img src="./assets/x.png" alt="Logo de X" class="redes"></a>
