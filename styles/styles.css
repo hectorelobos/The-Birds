@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap');
 *{
-    margin: 1;
+    margin: 1px;
     padding: 0;
     box-sizing: border-box;
     font-family: Alkatra;
@@ -49,7 +49,7 @@ ul li {
 }
 
 section{
-    font-size: 30px;
+    font-size: 16px;
 }
 article{
     font-size:30px;
@@ -58,8 +58,8 @@ li{
     list-style-position: outside;
 }
 img{
-    height: 220px;
-    width: 220px;
+    height: auto;
+    max-width: 100%;
 }
 .nav-links{
     color: darkgreen;
@@ -147,8 +147,8 @@ li {
     justify-content: center;
     align-items: center;
     background-color: rgb(177, 204, 189);
-    width: 240px;
-    padding: auto;
+    width: 220px;
+    padding: 15px;
     border-radius: 12px;
     text-align: center;
     font-weight: bold;
