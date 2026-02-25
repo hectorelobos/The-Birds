@@ -192,3 +192,50 @@ li {
 .navbar{
     margin: 0;
 }
+@media (min-width: 480px) and (max-width: 960px){
+    header{
+        background-color: rgb(0, 0, 0);
+    }
+    main{
+        background-color: rgb(0, 0, 0);
+        font-size: auto;
+    }
+    footer{
+        background-color: #000000;
+    }
+    .caja{
+        background-color: rgb(93, 141, 91);
+        font-size: 20px;
+    }
+    }
+    .contenedor-jugadores{
+        display: grid !important; 
+        grid-template-columns: repeat(3, 1fr) !important; 
+        gap: 10px; 
+        padding: 15px; 
+    }
+    
+    .jugador {
+        width: auto !important; 
+        min-width: 0 !important; 
+        max-width: 100% !important; 
+        box-sizing: border-box !important; 
+        word-wrap: break-word;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 8px;
+        text-align: center;
+        background-color: #f9f9f9;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .jugador h3{
+        font size: 0.9em;
+        margin-top: 0;
+        margin-bottom: 0; 
+    }
+    .jugador p {
+        font-size: 0.8em;
+        margin-bottom: 0;
+    }
+
+
