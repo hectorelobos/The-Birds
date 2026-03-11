@@ -1,0 +1,70 @@
+@use "variables" as v;
+@use "header";
+@use "footer";
+@use "index";
+@use "institucional";
+@use "galeria";
+@use "plantel";
+@use "contacto";
+
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap');
+
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Alkatra;}
+
+body{
+    background-color: v.$darkgreen;
+    background-image: url(../assets/LOGO/NUEVO/FONDO.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1{
+    color: v.$verde1;
+}
+h2{
+    color: v.$verde2;
+}
+h3{
+    color: v.$verde3;
+}
+h4{
+    color: v.$verde3;
+}
+h5{
+    color: v.$verde3;
+}
+ul li {
+    font-size: v.$fontsizelist;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+li{
+    list-style-position: outside;
+}
+section{
+    font-size: v.$fontsizesection;
+}
+article{
+    font-size: v.$fontsizearticle;
+}
+.nav-links{
+    color: v.$darkgreen;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: v.$paddinglink;
+    border: v.$borderlink;
+    transition: 0.3s;
+    &:hover{
+        box-shadow: v.$borderlink;
+
+        
+    }
+}
+
