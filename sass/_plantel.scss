@@ -1,0 +1,40 @@
+@use "variables" as v;
+
+.plantel-img{
+    width: 1000px;
+    display: block;
+    margin: auto;
+    height: auto;
+    background-image:initial;
+}
+
+.contenedor-jugadores{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding: 20px;
+    gap: 20px;
+}
+
+.jugador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: v.$color-jugador-media-background;
+    width: 220px;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    min-height: 80px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-wrap: balance;
+    flex-direction: column;
+
+    &:hover{
+        transform: scale(1.1);
+        box-shadow: v.$shadow-jugador-small-media;
+    }
+}

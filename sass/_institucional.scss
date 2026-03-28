@@ -1,0 +1,19 @@
+@use "variables" as v;
+
+.cuerpo-tecnico {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: v.$color-cuerpo-tecnico-background;
+    padding: 20px;
+    width: 70%;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: v.$shadow-jugador-media;
+
+    &:hover{
+        transform: scale(1.1);
+        box-sizing: v.$color-darkgreen;
+        
+    }
+}

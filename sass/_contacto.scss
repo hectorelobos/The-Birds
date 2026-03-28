@@ -1,0 +1,22 @@
+@use "variables" as v;
+
+caja {
+    background-color: v.$color-caja-background;
+    padding: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    margin: 15px;
+
+    &.a {
+        background-color: v.$color-caja-background;
+        padding: 20px;
+        font-size: 30px;
+        color: white;
+    }
+
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(0, 255, 150, 0.4);
+    }
+}

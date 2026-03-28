@@ -5,9 +5,23 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Alkatra;
-}body{
+
+}header{
+    position: static;
+    top: 0;
+    z-index: 10;
+}
+.logo{
+    top: 30px;
+    z-index: 1000;
+    width: auto;
+    height: 40vh;
+    background-color: transparent;
+}
+
+body{
     background-color:rgb(80, 143, 88);
-    background-image: url(../assets/LOGO\ NUEVO\ FONDO.jpeg);
+    background-image: url(../assets/LOGO/NUEVO/FONDO.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -16,7 +30,6 @@
     --darkgreen: #064e3b;
 }
 h2{
-    font-size: 1.5rem;
     color: rgb(13, 73, 5);
 }
 h1{
@@ -24,14 +37,14 @@ h1{
 }
 
 h3{
-    color:rgb(16, 133, 35)
-    ;
+    color:rgb(16, 133, 35);
+    
 }
 h4{
-    color: rgb(47, 143, 28);
+    color: rgb(16, 133, 35);
 }
 h5{
-    color: rgb(17, 151, 28);
+    color: rgb(16, 133, 35);
 }
 *{
     font-family:Alkatra;
@@ -41,13 +54,6 @@ ul li {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-}
-.logo{
-    top: 30px;
-    z-index: 1000;
-    width: auto;
-    height: 40vh;
-    background-color: transparent;
 }
 
 section{

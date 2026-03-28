@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap");
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header .navbar {
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #00ff99;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+header .navbar .navbar-brand h1 {
+  color: #f8f8f8;
+  font-size: 2.2rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+header .navbar .nav-item .nav-link {
+  color: #f8f8f8;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease-in-out;
+}
+header .navbar .nav-item .nav-link:hover {
+  color: 2px solid #00ff99;
+}
+header .navbar .navbar-toggler {
+  border-color: 2px solid #00ff99;
+}
+.logo {
+  top: 30px;
+  z-index: 1000;
+  width: auto;
+  height: 40vh;
+  background-color: transparent;
+}
+
+.nav-links {
+  color: #006400;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 5px;
+  border: #00ff99;
+  transition: 0.3s;
+}
+.nav-links:hover {
+  box-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99;
+}
+
+footer {
+  background-color: #006400;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.social-links a:hover {
+  color: #00ff99;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+.cuerpo-tecnico {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: #70b126;
+  padding: 20px;
+  width: 70%;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.cuerpo-tecnico:hover {
+  transform: scale(1.1);
+  box-sizing: #006400;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+.galeria img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.galeria-posta img {
+  width: auto;
+  height: 500px;
+}
+
+.plantel-img {
+  width: 1000px;
+  display: block;
+  margin: auto;
+  height: auto;
+  background-image: initial;
+}
+
+.contenedor-jugadores {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  padding: 20px;
+  gap: 20px;
+}
+
+.jugador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 220px;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  min-height: 80px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-wrap: balance;
+  flex-direction: column;
+}
+.jugador:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+caja {
+  background-color: rgba(22, 141, 52, 0.7);
+  padding: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: fit-content;
+  margin: 15px;
+}
+caja.a {
+  background-color: rgba(22, 141, 52, 0.7);
+  padding: 20px;
+  font-size: 30px;
+  color: white;
+}
+caja:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 255, 150, 0.4);
+}
+
+* {
+  margin: 1px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alkatra", cursive;
+}
+
+body {
+  background-color: rgb(80, 143, 88);
+  background-image: url(../assets/LOGO\ NUEVO\ FONDO.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+:root {
+  --darkgreen: v.$color-darkgreen;
+}
+
+h1 {
+  color: #000000;
+}
+
+h2 {
+  color: #025f02;
+}
+
+h3,
+h4,
+h5 {
+  color: #000000;
+}
+
+ul li {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+section {
+  font-size: 16px;
+}
+
+article {
+  font-size: 30px;
+}
+
+li {
+  list-style-position: outside;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.caja {
+  background-color: rgba(22, 141, 52, 0.7);
+  padding: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: fit-content;
+  margin: 15px;
+}
+.caja.a {
+  margin: 15px;
+  background-color: #51f7a4;
+  height: auto;
+  width: auto;
+  padding: 20px;
+  font-size: 30px;
+  color: #0d9714;
+}
+.caja:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.redes {
+  height: auto;
+  width: 50px;
+}
+
+.logo-nav {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@media (min-width: 480px) and (max-width: 960px) {
+  header {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  main {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: auto;
+  }
+  footer {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .caja {
+    background-color: rgba(86, 138, 107, 0.6);
+    font-size: 20px;
+  }
+  .contenedor-jugadores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 15px;
+  }
+  .jugador {
+    width: auto;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    border: 1px solid #00ff99;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  .jugador h3 {
+    font-size: 0.9em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .jugador p {
+    font-size: 0.8em;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 300px) and (max-width: 479px) {
+  .contenedor-jugadores {
+    display: grid;
+    gap: 8px;
+    padding: 5px;
+  }
+  .jugador {
+    width: auto;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    border: 1px solid #888888;
+    border-radius: 6px;
+    padding: 6px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  .cuerpo-tecnico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .caja {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+  }
+  .caja p {
+    font-size: 0.5em;
+    line-height: 1.4;
+    word-wrap: break-word;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

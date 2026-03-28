@@ -9,62 +9,200 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap');
 
-*{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Alkatra;}
 
-body{
-    background-color: v.$darkgreen;
-    background-image: url(../assets/LOGO/NUEVO/FONDO.jpeg);
+* {
+    margin: 1px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: v.$font-alkatra;
+}
+
+body {
+    background-color: rgb(80, 143, 88);
+    background-image: url(../assets/LOGO\ NUEVO\ FONDO.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-h1{
-    color: v.$verde1;
+:root {
+    --darkgreen: v.$color-darkgreen;
 }
-h2{
-    color: v.$verde2;
+
+h1 {
+    color: v.$color-h1;
 }
-h3{
-    color: v.$verde3;
+
+h2 {
+    color: v.$color-h2;
 }
-h4{
-    color: v.$verde3;
+
+h3,
+h4,
+h5 {
+    color: v.$color-h3-h4-h5;
 }
-h5{
-    color: v.$verde3;
-}
+
 ul li {
-    font-size: v.$fontsizelist;
+    font-size: 1.3rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-li{
+section {
+    font-size: 16px;
+}
+
+article {
+    font-size: 30px;
+}
+
+li {
     list-style-position: outside;
 }
-section{
-    font-size: v.$fontsizesection;
-}
-article{
-    font-size: v.$fontsizearticle;
-}
-.nav-links{
-    color: v.$darkgreen;
-    text-decoration: none;
-    border-radius: 10px;
-    padding: v.$paddinglink;
-    border: v.$borderlink;
-    transition: 0.3s;
-    &:hover{
-        box-shadow: v.$borderlink;
 
-        
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.caja {
+    background-color: v.$color-caja-background;
+    padding: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    margin: 15px;
+
+    &.a {
+        margin: 15px;
+        background-color: v.$color-caja-a-background;
+        height: auto;
+        width: auto;
+        padding: 20px;
+        font-size: 30px;
+        color: v.$color-caja-a-text;
+    }
+
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: v.$shadow-caja-hover;
     }
 }
 
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.redes {
+    height: auto;
+    width: 50px;
+}
+
+.logo-nav {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media (min-width: 480px) and (max-width: 960px) {
+    header {
+        background-color: v.$color-header-footer-media-background;
+    }
+
+    main {
+        background-color: v.$color-header-footer-media-background;
+        font-size: auto;
+    }
+
+    footer {
+        background-color: v.$color-header-footer-media-background;
+    }
+
+    .caja {
+        background-color: v.$color-caja-media-background;
+        font-size: 20px;
+    }
+
+    .contenedor-jugadores {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .jugador {
+        width: auto;
+        min-width: 0;
+        max-width: 100%;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        border: 1px solid v.$borderlink;
+        border-radius: 8px;
+        padding: 8px;
+        text-align: center;
+        background-color: v.$color-jugador-media-background;
+        box-shadow: v.$shadow-jugador-media;
+
+        h3 {
+            font-size: 0.9em;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        p {
+            font-size: 0.8em;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (min-width: 300px) and (max-width: 479px) {
+    .contenedor-jugadores {
+        display: grid;
+        gap: 8px;
+        padding: 5px;
+    }
+
+    .jugador {
+        width: auto;
+        min-width: 0;
+        max-width: 100%;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        border: 1px solid v.$color-jugador-media-border;
+        border-radius: 6px;
+        padding: 6px;
+        text-align: center;
+        background-color: v.$color-jugador-media-background;
+        box-shadow: v.$shadow-jugador-small-media;
+    }
+
+    .cuerpo-tecnico {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+        background-color: v.$color-jugador-media-background;
+    }
+
+    .caja {
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: v.$color-caja-small-media-background;
+        border-radius: 8px;
+
+        p {
+            font-size: 0.5em;
+            line-height: 1.4;
+            word-wrap: break-word;
+        }
+    }
+}

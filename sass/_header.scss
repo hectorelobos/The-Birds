@@ -1,25 +1,68 @@
 @use "variables" as v;
 
-header{
-    color: v.$darkgreen;
-    position: static;
+header {
+    width: 100%;
+    position: sticky;
     top: 0;
     z-index: 10;
-    .logo{
+
+    .navbar {
+        background-color: v.$header-bg-color;
+        border-bottom: 1px solid v.$borderlink;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+
+        .navbar-brand {
+            h1 {
+                color: v.$header-text-color;
+                font-size: 2.2rem;
+                margin: 0;
+                padding: 0;
+                line-height: 1;
+            }
+        }
+
+        .nav-item {
+            .nav-link {
+                color: v.$header-text-color;
+                font-size: 1.1rem;
+                padding: 0.5rem 1rem;
+                transition: color 0.3s ease-in-out;
+
+                
+                &:hover {
+                    color: v.$sborderlink;
+                }
+            }
+        } 
+
+        .navbar-toggler {
+            border-color: v.$sborderlink;
+            .navbar-toggler-icon {
+                
+            }
+        }
+    } 
+} 
+.logo{
     top: 30px;
     z-index: 1000;
     width: auto;
     height: 40vh;
     background-color: transparent;
-    }
-    .titulo{
-        color: v.$darkgreen;
-    }
-    .nav-link{
-        color: v.$white;
-    }
 }
 
+.nav-links{ 
+    color: v.$color-darkgreen;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px;
+    border: v.$borderlink;
+    transition: 0.3s;
 
-
-
+    
+    &:hover{
+        box-shadow: 0 0 10px v.$color-nav-links-border,
+                    0 0 20px v.$color-nav-links-border;
+    }
+}

@@ -1,0 +1,19 @@
+@use "variables" as v;
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+
+    img{
+        width: 300px;
+        height: auto;
+        border-radius: 10px;
+    }
+}
+
+.galeria-posta img{
+    width:auto;
+    height:500px;
+}

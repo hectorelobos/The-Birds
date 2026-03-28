@@ -1,0 +1,42 @@
+@use "variables" as v;
+
+footer {
+
+    background-color: v.$color-darkgreen;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        }
+
+        p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        .social-links {
+            a {
+                color: white;
+                margin: 0 10px;
+                text-decoration: none;
+
+                &:hover {
+                    color: v.$color-nav-links-border;
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+        }
