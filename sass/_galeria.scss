@@ -14,6 +14,46 @@
 }
 
 .galeria-posta img{
-    width:auto;
-    height:500px;
+    width: 5px;
+    height: 5vh;
+}
+
+.galeria-posta {
+    .carousel-item {
+    img {
+    height: 700px;
+    width: auto;
+    object-fit: center center;
+    }
+}
+
+    .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px;
+    border-radius: 5px;
+    color: yellow;
+    h5, p{
+        color: yellow;
+    }
+}
+}
+@media (max-width: 768px) {
+    .carousel-caption {
+    position: relative; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    color: #fff; 
+    background-color: rgba(0, 0, 0, 0.7); 
+
+    h5, p {
+        color: #fff;
+        font-size: 0.9rem; // Aquí puedes mantenerlo más pequeño para móviles
+    }
+}
+.carousel-item img {
+    height: 1px;
+    width: auto;
+}
 }

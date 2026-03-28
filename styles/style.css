@@ -101,6 +101,12 @@ p {
   box-sizing: #006400;
 }
 
+.contenido-institucional p {
+  font-size: 30px;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
 .galeria {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -114,10 +120,44 @@ p {
 }
 
 .galeria-posta img {
-  width: auto;
-  height: 500px;
+  width: 5px;
+  height: 5vh;
 }
 
+.galeria-posta .carousel-item img {
+  height: 700px;
+  width: auto;
+  object-fit: center center;
+}
+.galeria-posta .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  color: yellow;
+}
+.galeria-posta .carousel-caption h5, .galeria-posta .carousel-caption p {
+  color: yellow;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .carousel-caption h5, .carousel-caption p {
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  .carousel-item img {
+    height: 1px;
+    width: auto;
+  }
+}
 .plantel-img {
   width: 1000px;
   display: block;
@@ -199,7 +239,7 @@ h1 {
 }
 
 h2 {
-  color: #025f02;
+  color: #d0f336;
 }
 
 h3,
@@ -246,7 +286,7 @@ img {
   height: auto;
   width: auto;
   padding: 20px;
-  font-size: 30px;
+  font-size: 100px;
   color: #0d9714;
 }
 .caja:hover {
@@ -314,7 +354,7 @@ img {
     margin-bottom: 0;
   }
   .jugador p {
-    font-size: 0.8em;
+    font-size: 2rem;
     margin-bottom: 0;
   }
 }

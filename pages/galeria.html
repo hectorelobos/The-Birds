@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es-ar">
 <head>
@@ -9,83 +10,139 @@
 </head>
 
 <body>
-        <header> 
-                
-            <nav class="navbar navbar-expand-lg navbar-dark"> 
-        <div class="container-fluid">
+    <header> 
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success"> 
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <h1>The Birds FC</h1> 
+                </a>
 
-            
-            <a class="navbar-brand" href="../index.html">
-                <h1>The Birds FC</h1> 
-            </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="menuNav">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="./institucional.html">Institucional</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./plantel.html">Plantel</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./galeria.html">Galería</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
-            </li>
-
-            </ul>
-        </div>
-        </div>
-    </nav>
-
-                <h2>Fotos</h2>
-
-
+                <div class="collapse navbar-collapse" id="menuNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./institucional.html">Institucional</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./plantel.html">Plantel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./galeria.html">Galería</a> 
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
     </header>
 
-    <main>
+    <main class="container my-5"> 
+        <h3 class="text-center mb-4">Algunas imagenes</h3> 
+        
         <section class="galeria-posta">
-            <video src="../assets/grok-video-d97f9e81-2fff-4e79-9329-fbafea7d5aee.mp4"></video>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                
+                <div class="carousel-indicators">
+                    
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                </div>
 
-            <img src="../assets/edificios_color_verde_con_logo_de_the (2).jpeg" alt="Institucion de the birds">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../assets/nueva img1.png" class="d-block w-100" alt="Estadio de The Birds FC">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Estadio principal</h5>
+                            <p>Aquí es donde volamos más alto.</p>
+                        </div>
+                    </div>
+                
+                    <div class="carousel-item">
+                        <img src="../assets/nueva img2.png" class="d-block w-100" alt="Vista aérea de campo de entrenamiento">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Vestuario Birds FC</h5>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="../assets/nueva img3.png" class="d-block w-100" alt="Jugadores en acción">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>MVP de The Birds FC esta temporada</h5>
+                            <p>La pasión en cada jugada.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="../assets/nueva img4.png" class="d-block w-100" alt="Preparación intensa">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Team</h5>
+                            <p>Siempre listos para el próximo desafío.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="../assets/nueva img5.png" class="d-block w-100" alt="Directivos del club">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5> Indumentaria Urbana</h5>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="../assets/freepik_directivos-del-club-en-saco-y-corbata-posando-formalmente-en-sala-de-reuniones-elegante_0001.png" class="d-block w-100" alt="Reunión de la directiva">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Directivos de The Birds FC</h5>
+                            <p>Tomando decisiones clave en cada reunión.</p>   
+                        </div>
+                    </div>
+                    
+                </div>
 
-            <img src="../assets/edificios_color_verde_con_logo_de_the (1).jpeg" alt="Instalaciones">
-
-
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <h2>Derechos Reservados</h2>
-        <h2>Creado por Héctor Eduardo Lobos</h2>
-        
+    <footer class="bg-dark text-white text-center py-3 mt-5"> 
+        <p>Derechos Reservados - Creado por Héctor Eduardo Lobos</p>
         
         <nav>
-        <ul>
-            <li>
-                <a href="https://www.instagram.com/" target="_blank">
-                <img src="../assets/instagram.png" alt="Logo de instagram" class="redes"> </a>
-            </li>
-            <li>
+            <ul class="list-unstyled d-flex justify-content-center"> 
+                <li class="mx-2">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="../assets/instagram.png" alt="Logo de instagram" class="redes" style="width: 30px;"> 
+                    </a>
+                </li>
+                <li class="mx-2">
                     <a href="https://www.whatsapp.com/?lang=es" target="_blank">
-                    <img src="../assets/whatsapp.png" alt="Logo de whatsapp" class="redes"> </a>
-            </li>
-            <li>
-                <a href="https://x.com/" target="_blank">
-                    <img src="../assets/x.png" alt="Logo de X" class="redes"> </a>
-            </li>
-        </ul>
+                        <img src="../assets/whatsapp.png" alt="Logo de whatsapp" class="redes" style="width: 30px;"> 
+                    </a>
+                </li>
+                <li class="mx-2">
+                    <a href="https://x.com/" target="_blank">
+                        <img src="../assets/x.png" alt="Logo de X" class="redes" style="width: 30px;"> 
+                    </a>
+                </li>
+            </ul>
         </nav>
-
     </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
-
